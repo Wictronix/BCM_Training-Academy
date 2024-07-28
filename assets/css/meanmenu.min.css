@@ -141,7 +141,7 @@ a.meanmenu-reveal {
 .mean-container .mean-bar::after {
   color: #ffffff;
   content: "MENU";
-  font-size: 21px;
+  font-size: 2rem;
   left: 5%;
   position: absolute;
   top: 12px;
@@ -194,8 +194,8 @@ a.meanmenu-reveal {
 }
 .mean-container .mean-bar::before {
   color: #fff;
-  content: "DIT Learn";
-  font-size: 22px;
+  content: "BCM Learning";
+  font-size: 1.5rem;
   font-weight: 600;
   left: 10px;
   position: absolute;

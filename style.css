@@ -79,6 +79,135 @@
 .sticky-nav .header-button a {
   color: #fff;
 }
+
+
+
+/*<!-- ============================================================== -->
+<!-- Start  main-header Css  Updated-->
+
+<!-- ============================================================== -->*/
+
+/* Header Container */
+#sticky-header {
+  background-color: white; /* Header background color */
+  border-bottom: 1px solid #01579b; /* Primary color for border */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px 0; /* Adding some padding */
+}
+
+.header-logo a {
+  display: block;
+}
+
+.header-logo img {
+  max-height: 110px;
+  width: auto;
+}
+
+.header-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-menu ul li {
+  position: relative;
+  margin-left: 20px;
+}
+
+.header-menu ul li a {
+  text-decoration: none;
+  color: #062e5f; /* Darker blue for text */
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  border-radius: 5px; /* Rounded corners */
+  border: 2px solid transparent; /* Initial transparent border */
+  position: relative; /* For animation positioning */
+  font-size: 2rem; /* Increased font size for main menu items */
+}
+
+.header-menu ul li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #0288D1; /* Primary color */
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header-menu ul li a:hover::after,
+.header-menu ul li a:focus::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Sub-menu styles */
+.header-menu ul li ul.sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border: 1px solid #e5e5e5;
+  z-index: 1000;
+  border-radius: 5px; /* Rounded corners */
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  transform: translateY(10px); /* Initial position for animation */
+  transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.header-menu ul li:hover ul.sub-menu,
+.header-menu ul li:focus ul.sub-menu {
+  display: block;
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Fully visible */
+  transform: translateY(0); /* Final position for animation */
+}
+
+.header-menu ul li ul.sub-menu li {
+  margin: 0;
+}
+
+.header-menu ul li ul.sub-menu li a {
+  padding: 10px 15px;
+  color: #062e5f; /* Darker blue for sub-menu text */
+  white-space: nowrap;
+  transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  border: 2px solid transparent; /* Initial transparent border */
+  font-size: 1.3rem; /* Increased font size for sub-menu items */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .header-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-menu ul li {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .header-menu ul li ul.sub-menu {
+    position: relative;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+
+
+
 /*<!-- ============================================================== -->
 <!-- Start  main-header Css -->
 <!-- ============================================================== -->*/
@@ -141,6 +270,22 @@ a.main_sticky {
   position: absolute;
   color: #8e9bae;
 }
+
+/*<!-- ============================================================== -->
+<!-- Video css -->
+<!-- ============================================================== -->*/
+
+.text-container {
+  padding: 20px; /* Add some padding for better appearance */
+}
+
+video {
+  object-fit: cover; /* This will ensure the video covers the entire area */
+  height: 35rem; /* Ensures the video height is consistent */
+}
+
+
+
 
 /*<!-- ============================================================== -->
 <!-- Start sub-menu Css -->
@@ -585,16 +730,21 @@ a.main_sticky {
 <!-- Start  breadcumb-area Css -->
 <!-- ============================================================== -->*/
 .breadcumb-area {
+  margin-top: 5rem;
   padding: 170px 0 143px;
+  width: 80%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover !important;
   position: relative;
   background: url(assets/images/contact.jpg);
+  margin: 0 auto; /* Center the element horizontally */
 }
+
 .breacumb-content {
   text-align: center;
 }
+
 .breadcumb-title h1 {
   margin-bottom: 15px;
   margin-top: 0;
@@ -605,6 +755,7 @@ a.main_sticky {
   text-align: center;
   text-transform: capitalize;
 }
+
 .breadcumb-content-text a {
   display: inline-block;
   margin: 0 6px;
@@ -613,10 +764,13 @@ a.main_sticky {
   font-weight: 500;
   text-transform: capitalize;
 }
+
 .breadcumb-content-text a i {
   display: inline-block;
   margin: 0 8px;
 }
+
+
 /*<!-- ============================================================== -->
 <!-- Start  dit-service-section  Css -->
 <!-- ============================================================== -->*/
