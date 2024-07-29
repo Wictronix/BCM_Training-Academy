@@ -9,7 +9,7 @@
   animation: 500ms running fadeInUp;
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   transition: 0.5s !important;
-  background: #0288d1 !important;
+  background: white !important;
   z-index: 9999 !important;
   animation-name: slideInDown;
   padding: 0 40px 0px;
@@ -127,7 +127,7 @@
   border-radius: 5px; /* Rounded corners */
   border: 2px solid transparent; /* Initial transparent border */
   position: relative; /* For animation positioning */
-  font-size: 2rem; /* Increased font size for main menu items */
+  font-size: 2.5rem; /* Increased font size for main menu items */
 }
 
 .header-menu ul li a::after {
@@ -182,7 +182,7 @@
   white-space: nowrap;
   transition: border-color 0.3s ease, color 0.3s ease; /* Smooth transition */
   border: 2px solid transparent; /* Initial transparent border */
-  font-size: 1.3rem; /* Increased font size for sub-menu items */
+  font-size: 1rem; /* Increased font size for sub-menu items */
 }
 
 
@@ -248,7 +248,7 @@ a.main_sticky {
 }
 
 .sticky-nav .header-menu ul li a {
-  color: #fff;
+  color: #062e5f;
 }
 
 .header-menu ul li a:hover {
@@ -275,13 +275,759 @@ a.main_sticky {
 <!-- Video css -->
 <!-- ============================================================== -->*/
 
+/* Hero Section */
+.hero-section {
+  background-color: #1F2A48; /* Background color for the hero section matching Director's Desk theme */
+  position: relative;
+  height: 100vh;
+  padding: 0;
+}
+
 .text-container {
-  padding: 20px; /* Add some padding for better appearance */
+  padding: 3rem;
+  color: #ffffff; /* Text color */
+  z-index: 2; /* Ensure text is above the video */
+  text-align: left;
+}
+
+.title {
+  height: auto;
+}
+
+.title h1 {
+  color: #1F2A48; /* Primary color for the heading */
+  font-size: 5rem; /* Adjust font size for responsiveness */
+  margin: 0;
+  font-weight: 700; /* Bold font for title */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle h3 {
+  color: #0288D1; /* Secondary color for the subheading */
+  font-size: 1.5rem; /* Adjust font size as needed */
+  margin: 20px 0 0 0; /* Margin for spacing between title and subtitle */
+  font-weight: 500; /* Medium font weight for subtitle */
+  line-height: 1.5; /* Adjust line height for better spacing */
+  font-family: 'Roboto', sans-serif;
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Ensures the video height is consistent */
+  background-color: transparent;
 }
 
 video {
-  object-fit: cover; /* This will ensure the video covers the entire area */
-  height: 35rem; /* Ensures the video height is consistent */
+  object-fit: cover; /* Ensures the video covers the entire area */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure video is behind the text */
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .title {
+    height: auto;
+  }
+
+  .title h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .subtitle h3 {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+
+  .text-container {
+    padding: 2rem;
+  }
+
+  .box {
+    height: 50vh; /* Adjust height for smaller screens */
+  }
+
+  .video-container {
+    height: 50vh; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    height: auto;
+  }
+
+  .title h1 {
+    font-size: 2rem; /* Adjust font size for extra small screens */
+  }
+
+  .subtitle h3 {
+    font-size: 1rem; /* Adjust font size for extra small screens */
+  }
+
+  .text-container {
+    padding: 1rem;
+  }
+
+  .box {
+    height: 40vh; /* Adjust height for extra small screens */
+  }
+
+  .video-container {
+    height: 40vh; /* Adjust height for extra small screens */
+  }
+}
+
+/*<!-- ============================================================== -->
+<!-- Search form -->
+<!-- ============================================================== -->*/
+
+.form-container {
+  background: rgba(255, 255, 255, 0.8); /* Light transparent background */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.form-container input,
+.form-container select,
+.form-container button {
+  margin-bottom: 10px;
+}
+
+.search_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.search-form {
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-form .form-control {
+  width: 200px;
+  border-radius: 0;
+  border: 1px solid #ddd;
+}
+
+.search-form .btn {
+  border-radius: 0;
+  background-color: #0288D1;
+  border-color: #0288D1;
+  margin-top: 4rem;
+}
+
+.search-form .btn:hover {
+  background-color: #01579b;
+  border-color: #01579b;
+}
+
+hr {
+  background-color: #0288D1; /* Changed to match the theme color */
+  height: 0.1em;
+  border: none;
+  margin: 1rem 0; /* Adjust the margin to your preference */
+}
+
+@media (max-width: 768px) {
+  .search-form .form-control {
+    width: 150px; /* Adjust width for smaller screens */
+    margin-bottom: 10px; /* Add margin for better spacing on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .search-form .form-control {
+    width: 100%; /* Full width for extra small screens */
+    margin-bottom: 10px; /* Add margin for better spacing on smaller screens */
+  }
+
+  .search-form .btn {
+    width: 100%; /* Full width button on extra small screens */
+  }
+}
+
+
+/*  -----------------------------------------------------------------------
+
+Explore our courses 
+
+
+----------------------------------------------------------------------------------
+
+*/
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #01579b;
+}
+
+.card-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #333f4f;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 150px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 120px;
+  }
+
+  .card-title {
+    font-size: 0.875rem;
+  }
+
+  .card-text {
+    font-size: 0.75rem;
+  }
+}
+
+/*  -----------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+Programmes courses
+
+-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+*/
+
+.training-section {
+  background-color: #141C36;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%); /* Center the section */
+  margin-right: calc(-50vw + 50%); /* Center the section */
+}
+
+.training-box {
+  background-color: #1F2A48;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%; /* Ensure the box takes full width of its column */
+}
+
+.training-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.training-box h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0288D1;
+  margin-bottom: 1rem;
+}
+
+.training-box p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #B0BEC5;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .training-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .training-box p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .training-box h3 {
+    font-size: 1.25rem;
+  }
+
+  .training-box p {
+    font-size: 0.75rem;
+  }
+}
+
+
+
+/*  -----------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+Why BCM Learning
+
+-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+*/
+/* Overall Container Styling */
+.container1 {
+  background-color: #f4f6f9; /* Light background color for the container */
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Heading */
+h2 {
+  font-size: 2.5rem;
+  color: #0288D1;
+  margin-bottom: 2rem;
+}
+
+/* Statistics Section */
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  border: 2px solid #0288D1;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 200px; /* Fixed height for uniformity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box i {
+  color: #0288D1;
+  margin-bottom: 1rem;
+}
+
+.stat-title {
+  font-size: 1.25rem;
+  color: #0288D1;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature List */
+.feature-list {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Remove default bullets */
+}
+
+.feature-list li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-right: 2rem; /* Space between items */
+  position: relative; /* Position relative for custom bullet */
+  padding-left: 1.5rem; /* Space for custom bullet */
+}
+
+.feature-list li::before {
+  content: "\2022"; /* Unicode character for bullet */
+  font-size: 1.5rem; /* Size of the bullet */
+  color: #0288D1; /* Bullet color */
+  position: absolute;
+  left: 0; /* Position bullet on the left */
+  top: 0;
+}
+
+.feature-list li strong {
+  color: #0288D1;
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .feature-list {
+    flex-wrap: wrap; /* Allow wrapping on medium screens */
+  }
+
+  .feature-list li {
+    flex: 1 1 calc(50% - 1rem); /* Two items per row for medium screens */
+    margin-right: 1rem; /* Adjust space between items */
+    margin-bottom: 1rem; /* Space below each item */
+    padding-left: 2rem; /* Adjust padding for bullet spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-list li {
+    flex: 1 1 100%; /* One item per row for small screens */
+    margin-right: 0; /* Remove right margin for full-width items */
+    padding-left: 2rem; /* Adjust padding for bullet spacing */
+  }
+}
+
+
+/*  -----------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+Schedule Section
+
+-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+/* Schedule Section */
+.schedule-section {
+  background-color: #f4f4f4; /* Light background for the section */
+  padding: 2rem 1rem;
+  border-radius: 8px;
+}
+
+/* Event Cards */
+.event-cards {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+}
+
+.event-card {
+  background-color: #ffffff; /* White background for the cards */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.event-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  margin: 0.25rem 0;
+}
+
+/* Show More Button */
+.btn-primary {
+  background-color: #0288D1; /* Primary color for button */
+  border-color: #0288D1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #01579b; /* Darker shade on hover */
+  border-color: #01579b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-cards {
+    flex-direction: row; /* Align cards side by side on smaller screens */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  }
+
+  .event-card {
+    flex: 1 0 45%; /* Adjust card size to fit in row */
+    margin-right: 1rem;
+  }
+}
+
+
+/*  -----------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+About Section Strarts from here
+
+-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+
+
+/*  -----------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+About BCM
+
+-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+
+/* About Section */
+/* About Section */
+.about-section {
+  background-color: #f5f5f5; /* Dark background to match the theme */
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+.about-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1b274f;
+  margin-bottom: 1rem;
+}
+
+.about-subheading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00bcd4;;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #4b4b4b;
+}
+
+.about-text p strong {
+  font-size: 1.2rem;
+  color: #00bcd4;
+}
+
+.about-image img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #00bcd4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-subheading {
+    font-size: 1.2rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+/*  -----------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+About Directors Desk
+
+-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+/* Director's Desk Section */
+.director-desk {
+  background-color: #f5f5f5; /* Light background for the section */
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  color: #333;
+}
+
+.founder-image img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+.content-navigation {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.nav-btn {
+  background: none;
+  border: 2px solid #0288D1;
+  color: #0288D1;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.nav-btn.active, .nav-btn:hover {
+  background-color: #0288D1;
+  color: #fff;
+}
+
+.content-display {
+  border-top: 2px solid #0288D1;
+  padding-top: 1rem;
+}
+
+.content-item {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.content-item.active {
+  display: block;
+}
+
+.content-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0288D1;
+  margin-bottom: 1rem;
+}
+
+.content-item p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Animation for content fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Ensure equal height for content items */
+.content-display {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .content-item h3 {
+    font-size: 1.25rem;
+  }
+
+  .content-item p {
+    font-size: 0.875rem;
+  }
+}
+
+
+
+/*  -----------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+About CTA section 
+
+-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+/* CTA Section Styles */
+.cta-section {
+  background-color: #0288D1; /* Primary color for the background */
+  color: #ffffff; /* Text color */
+  padding: 3rem 0; /* Padding for top and bottom */
+  text-align: center; /* Center text alignment */
+}
+
+.cta-heading {
+  font-family: 'Montserrat', sans-serif; /* Heading font */
+  font-size: 2.5rem; /* Heading font size */
+  font-weight: 700; /* Bold heading */
+  margin-bottom: 1rem; /* Space below heading */
+}
+
+.cta-description {
+  font-family: 'Roboto', sans-serif; /* Description font */
+  font-size: 1.25rem; /* Description font size */
+  margin-bottom: 2rem; /* Space below description */
+  color: #f0f0f0; /* Slightly lighter text color */
+}
+
+.cta-buttons {
+  display: flex; /* Flexbox for button alignment */
+  justify-content: center; /* Center buttons */
+  gap: 1rem; /* Space between buttons */
+}
+
+.cta-buttons .btn {
+  padding: 0.75rem 2rem; /* Padding for buttons */
+  font-size: 1rem; /* Button font size */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline from links */
+  font-family: 'Roboto', sans-serif; /* Button font */
+  font-weight: 500; /* Medium font weight */
+}
+
+.cta-buttons .btn-primary {
+  background-color: #0288D1; /* Primary button color */
+  border: 1px solid #0288D1; /* Primary button border color */
+  color: #ffffff; /* Button text color */
+}
+
+.cta-buttons .btn-primary:hover {
+  background-color: #01579b; /* Darker color on hover */
+  border-color: #01579b; /* Border color on hover */
+}
+
+.cta-buttons .btn-secondary {
+  background-color: #1F2A48; /* Secondary button color */
+  border: 1px solid #1F2A48; /* Secondary button border color */
+  color: #ffffff; /* Button text color */
+}
+
+.cta-buttons .btn-secondary:hover {
+  background-color: #141C36; /* Darker color on hover */
+  border-color: #141C36; /* Border color on hover */
 }
 
 
@@ -455,6 +1201,8 @@ video {
 /*<!-- ============================================================== -->
 <!-- Start  dit-feature-section  Css -->
 <!-- ============================================================== -->*/
+
+
 .slider-area.style-three {
   background: url(assets/images/bg.png);
   background-size: cover;
@@ -731,8 +1479,8 @@ video {
 <!-- ============================================================== -->*/
 .breadcumb-area {
   margin-top: 5rem;
-  padding: 170px 0 143px;
-  width: 80%;
+  /* padding: 170px 0 143px; */
+  width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover !important;
@@ -3065,7 +3813,7 @@ textarea#massage::placeholder {
 /*<!-- ============================================================== -->
 <!-- Start .dit-events-section  Css -->
 <!-- ============================================================== -->*/
-.dit-events-section {
+/* .dit-events-section {
   padding: 100px 0 100px;
 }
 .dit-events-section .events-top {
@@ -3154,7 +3902,137 @@ textarea#massage::placeholder {
 }
 .dit-events-section .events-thumb img {
   width: 100%;
+} */
+
+.dit-events-section {
+  padding: 100px 0;
+  background: #fff;
+  color: #fff;
 }
+
+.dit-events-section .events-top {
+  text-align: center;
+  padding: 60px 0;
+  background: #f4f6f9;
+  border-radius: 7px;
+  margin-bottom: 50px;
+}
+
+.dit-events-section .events-top ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dit-events-section .events-top ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.dit-events-section .events-top ul li a {
+  font-size: 16px;
+  color: #B0BEC5;
+  text-decoration: none;
+}
+
+.dit-events-section .events-top ul li a.active {
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+.dit-events-section .events-top ul li.bef {
+  position: relative;
+}
+
+.dit-events-section .events-top ul li.bef::before,
+.dit-events-section .events-top ul li.bef::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  height: 17px;
+  width: 1px;
+  background: #616161;
+}
+
+.dit-events-section .events-top ul li.bef::before {
+  left: -40px;
+}
+
+.dit-events-section .events-top ul li.bef::after {
+  right: -40px;
+}
+
+.dit-events-section .single-events {
+  display: flex;
+  margin: 40px 0;
+  border-bottom: 1px solid #0288d1;
+  padding-bottom: 20px;
+}
+
+.dit-events-section .events-number {
+  margin-right: 150px;
+  position: relative;
+  top: 30px;
+}
+
+.dit-events-section .events-number::before {
+  position: absolute;
+  content: "";
+  right: -75px;
+  top: 0;
+  height: 100px;
+  width: 1px;
+  background: #00bcd4;
+}
+
+.dit-events-section .events-number h2 {
+  font-size: 70px;
+  margin: 0;
+  line-height: 70px;
+  color: #00bcd4;
+}
+
+.dit-events-section span {
+  font-size: 16px;
+  color: #0288d1;
+}
+
+.dit-events-section .events-icon i {
+  display: inline-block;
+  color: #00bcd4;
+}
+
+.dit-events-section .events-title h4 {
+  font-size: 24px;
+  margin: 0 0 5px;
+  color: #fff;
+}
+
+.dit-events-section .events-description p {
+  font-size: 16px;
+  margin: 15px 0 0;
+  overflow: hidden;
+  color: #B0BEC5;
+}
+
+.dit-events-section .events-thumb {
+  margin: 40px 0;
+}
+
+.dit-events-section .events-thumb img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.events-list {
+  display: none;
+}
+
+.events-list.active {
+  display: block;
+}
+
+
 
 /*<!-- ============================================================== -->
 <!-- Start  dit-video-section  Css -->
