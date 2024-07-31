@@ -9,10 +9,10 @@
   animation: 500ms running fadeInUp;
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   transition: 0.5s !important;
-  background: white !important;
+  background:#052d5f !important;
   z-index: 9999 !important;
   animation-name: slideInDown;
-  padding: 0 40px 0px;
+  /* padding: 0 40px 0px; */
 }
 
 /*<!-- ============================================================== -->
@@ -92,7 +92,7 @@
   background-color: white; /* Header background color */
   border-bottom: 1px solid #01579b; /* Primary color for border */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 10px 0; /* Adding some padding */
+  /* padding: 10px 0; */
 }
 
 .header-logo a {
@@ -248,12 +248,12 @@ a.main_sticky {
 }
 
 .sticky-nav .header-menu ul li a {
-  color: #062e5f;
+  color: #fff;
 }
 
-.header-menu ul li a:hover {
+/* .header-menu ul li a:hover {
   color: #062e5f;
-}
+} */
 
 .header-menu ul li.icon {
   position: relative;
@@ -833,7 +833,7 @@ About BCM
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
-  color: #4b4b4b;
+  color: #71b8ff;
 }
 
 .about-text p strong {
@@ -4002,6 +4002,10 @@ textarea#massage::placeholder {
   color: #00bcd4;
 }
 
+.dit-events-section .events-icon a{
+  display: inline-block;
+  color: #00bcd4;
+}
 .dit-events-section .events-title h4 {
   font-size: 24px;
   margin: 0 0 5px;
@@ -5165,4 +5169,112 @@ textarea#massage::placeholder {
     transform: translateY(-1em) rotate(-0.5turn) scale(0.5);
     opacity: 0;
   }
+}
+
+
+/* ================================================================================
+Course Detail
+================================================================================== */
+
+.course-hero {
+  background-color: #0288D1;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.course-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.course-hero p {
+  font-size: 1.5rem;
+}
+
+.course-content {
+  padding: 50px 0;
+}
+
+.course-card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.course-card h3 {
+  font-size: 2rem;
+  color: #0288D1;
+}
+
+.course-card p {
+  font-size: 1rem;
+}
+
+.course-card .price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #E53935;
+}
+
+.course-card .btn {
+  background-color: #0288D1;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.course-card .btn:hover {
+  background-color: #026fa1;
+}
+
+/* ================================================================================
+Course . html css
+==================================================================================== */
+
+.course-card {
+  background-color: #1f2b47;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.course-card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.course-card .card-body {
+  padding: 1.5rem;
+}
+
+.course-card h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #0288D1;
+}
+
+.course-card p {
+  font-size: 1rem;
+  color: #B0BEC5;
+}
+
+.course-card .btn {
+  background-color: #0288D1;
+  border-color: #0288D1;
+}
+
+.course-card .btn:hover {
+  background-color: #01579b;
+  border-color: #01579b;
+}
+
+.container {
+  padding: 2rem 0;
 }
