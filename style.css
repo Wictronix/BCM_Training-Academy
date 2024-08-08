@@ -9,7 +9,7 @@
   animation: 500ms running fadeInUp;
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   transition: 0.5s !important;
-  background:#052d5f !important;
+  background: #052d5f !important;
   z-index: 9999 !important;
   animation-name: slideInDown;
   /* padding: 0 40px 0px; */
@@ -80,8 +80,6 @@
   color: #fff;
 }
 
-
-
 /*<!-- ============================================================== -->
 <!-- Start  main-header Css  Updated-->
 
@@ -91,7 +89,7 @@
 #sticky-header {
   background-color: white; /* Header background color */
   border-bottom: 1px solid #01579b; /* Primary color for border */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /* padding: 10px 0; */
 }
 
@@ -131,13 +129,13 @@
 }
 
 .header-menu ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -2px;
   width: 0;
   height: 2px;
-  background: #0288D1; /* Primary color */
+  background: #0288d1; /* Primary color */
   transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -154,7 +152,7 @@
   top: 100%;
   left: 0;
   background-color: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #e5e5e5;
   z-index: 1000;
   border-radius: 5px; /* Rounded corners */
@@ -185,7 +183,6 @@
   font-size: 1rem; /* Increased font size for sub-menu items */
 }
 
-
 /* Responsive Adjustments */
 @media (max-width: 991px) {
   .header-menu ul {
@@ -205,9 +202,6 @@
   }
 }
 
-
-
-
 /*<!-- ============================================================== -->
 <!-- Start  main-header Css -->
 <!-- ============================================================== -->*/
@@ -222,10 +216,6 @@ a.main_sticky {
 
 .sticky-nav a.main_sticky {
   display: inline-block;
-}
-
-.header-logo {
-  margin-top: 13px;
 }
 
 .header-menu {
@@ -277,7 +267,7 @@ a.main_sticky {
 
 /* Hero Section */
 .hero-section {
-  background-color: #1F2A48; /* Background color for the hero section matching Director's Desk theme */
+  background-color: #1f2a48; /* Background color for the hero section matching Director's Desk theme */
   position: relative;
   height: 100vh;
   padding: 0;
@@ -295,21 +285,21 @@ a.main_sticky {
 }
 
 .title h1 {
-  color: #1F2A48; /* Primary color for the heading */
+  color: #1f2a48; /* Primary color for the heading */
   font-size: 5rem; /* Adjust font size for responsiveness */
   margin: 0;
   font-weight: 700; /* Bold font for title */
   line-height: 1.2; /* Adjust line height for better spacing */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .subtitle h3 {
-  color: #0288D1; /* Secondary color for the subheading */
+  color: #0288d1; /* Secondary color for the subheading */
   font-size: 1.5rem; /* Adjust font size as needed */
   margin: 20px 0 0 0; /* Margin for spacing between title and subtitle */
   font-weight: 500; /* Medium font weight for subtitle */
   line-height: 1.5; /* Adjust line height for better spacing */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .box {
@@ -410,9 +400,10 @@ video {
 .search_container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .search-form {
@@ -432,8 +423,8 @@ video {
 
 .search-form .btn {
   border-radius: 0;
-  background-color: #0288D1;
-  border-color: #0288D1;
+  background-color: #0288d1;
+  border-color: #0288d1;
   margin-top: 4rem;
 }
 
@@ -443,7 +434,7 @@ video {
 }
 
 hr {
-  background-color: #0288D1; /* Changed to match the theme color */
+  background-color: #0288d1; /* Changed to match the theme color */
   height: 0.1em;
   border: none;
   margin: 1rem 0; /* Adjust the margin to your preference */
@@ -466,7 +457,6 @@ hr {
     width: 100%; /* Full width button on extra small screens */
   }
 }
-
 
 /*  -----------------------------------------------------------------------
 
@@ -492,14 +482,14 @@ Explore our courses
 }
 
 .card-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: #01579b;
 }
 
 .card-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: #333f4f;
 }
@@ -543,7 +533,7 @@ Programmes courses
 */
 
 .training-section {
-  background-color: #141C36;
+  background-color: #141c36;
   padding: 2rem;
   border-radius: 10px;
   color: #ffffff;
@@ -553,7 +543,7 @@ Programmes courses
 }
 
 .training-box {
-  background-color: #1F2A48;
+  background-color: #1f2a48;
   padding: 2rem;
   border-radius: 10px;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -566,18 +556,18 @@ Programmes courses
 }
 
 .training-box h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #0288D1;
+  color: #0288d1;
   margin-bottom: 1rem;
 }
 
 .training-box p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #B0BEC5;
+  color: #b0bec5;
   margin-bottom: 0.5rem;
 }
 
@@ -601,8 +591,6 @@ Programmes courses
   }
 }
 
-
-
 /*  -----------------------------------------------------------------------
 -------------------------------------------------------------------------------
 
@@ -623,8 +611,7 @@ Why BCM Learning
 /* Section Heading */
 h2 {
   font-size: 2.5rem;
-  color: #0288D1;
-  margin-bottom: 2rem;
+  color: #0288d1;
 }
 
 /* Statistics Section */
@@ -634,7 +621,7 @@ h2 {
   align-items: center;
   padding: 2rem;
   background-color: #fff;
-  border: 2px solid #0288D1;
+  border: 2px solid #0288d1;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -643,13 +630,13 @@ h2 {
 }
 
 .stat-box i {
-  color: #0288D1;
+  color: #0288d1;
   margin-bottom: 1rem;
 }
 
 .stat-title {
   font-size: 1.25rem;
-  color: #0288D1;
+  color: #0288d1;
   font-weight: bold;
   margin: 0;
 }
@@ -680,14 +667,14 @@ h2 {
 .feature-list li::before {
   content: "\2022"; /* Unicode character for bullet */
   font-size: 1.5rem; /* Size of the bullet */
-  color: #0288D1; /* Bullet color */
+  color: #0288d1; /* Bullet color */
   position: absolute;
   left: 0; /* Position bullet on the left */
   top: 0;
 }
 
 .feature-list li strong {
-  color: #0288D1;
+  color: #0288d1;
   font-size: 1.2rem;
 }
 
@@ -712,7 +699,6 @@ h2 {
     padding-left: 2rem; /* Adjust padding for bullet spacing */
   }
 }
-
 
 /*  -----------------------------------------------------------------------
 -------------------------------------------------------------------------------
@@ -754,8 +740,8 @@ Schedule Section
 
 /* Show More Button */
 .btn-primary {
-  background-color: #0288D1; /* Primary color for button */
-  border-color: #0288D1;
+  background-color: #0288d1; /* Primary color for button */
+  border-color: #0288d1;
   padding: 0.75rem 1.5rem;
   border-radius: 5px;
   font-size: 1rem;
@@ -778,7 +764,6 @@ Schedule Section
     margin-right: 1rem;
   }
 }
-
 
 /*  -----------------------------------------------------------------------
 -------------------------------------------------------------------------------
@@ -810,11 +795,11 @@ About BCM
 }
 
 .about-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .about-heading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   color: #1b274f;
@@ -822,10 +807,10 @@ About BCM
 }
 
 .about-subheading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #00bcd4;;
+  color: #00bcd4;
   margin-bottom: 1.5rem;
 }
 
@@ -862,9 +847,6 @@ About BCM
   }
 }
 
-
-
-
 /*  -----------------------------------------------------------------------
 -------------------------------------------------------------------------------
 
@@ -894,8 +876,8 @@ About Directors Desk
 
 .nav-btn {
   background: none;
-  border: 2px solid #0288D1;
-  color: #0288D1;
+  border: 2px solid #0288d1;
+  color: #0288d1;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 500;
@@ -905,13 +887,14 @@ About Directors Desk
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.nav-btn.active, .nav-btn:hover {
-  background-color: #0288D1;
+.nav-btn.active,
+.nav-btn:hover {
+  background-color: #0288d1;
   color: #fff;
 }
 
 .content-display {
-  border-top: 2px solid #0288D1;
+  border-top: 2px solid #0288d1;
   padding-top: 1rem;
 }
 
@@ -925,23 +908,27 @@ About Directors Desk
 }
 
 .content-item h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #0288D1;
+  color: #0288d1;
   margin-bottom: 1rem;
 }
 
 .content-item p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
 }
 
 /* Animation for content fade-in */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Ensure equal height for content items */
@@ -961,8 +948,6 @@ About Directors Desk
   }
 }
 
-
-
 /*  -----------------------------------------------------------------------
 -------------------------------------------------------------------------------
 
@@ -973,21 +958,21 @@ About CTA section
 
 /* CTA Section Styles */
 .cta-section {
-  background-color: #0288D1; /* Primary color for the background */
+  background-color: #0288d1; /* Primary color for the background */
   color: #ffffff; /* Text color */
   padding: 3rem 0; /* Padding for top and bottom */
   text-align: center; /* Center text alignment */
 }
 
 .cta-heading {
-  font-family: 'Montserrat', sans-serif; /* Heading font */
+  font-family: "Montserrat", sans-serif; /* Heading font */
   font-size: 2.5rem; /* Heading font size */
   font-weight: 700; /* Bold heading */
   margin-bottom: 1rem; /* Space below heading */
 }
 
 .cta-description {
-  font-family: 'Roboto', sans-serif; /* Description font */
+  font-family: "Roboto", sans-serif; /* Description font */
   font-size: 1.25rem; /* Description font size */
   margin-bottom: 2rem; /* Space below description */
   color: #f0f0f0; /* Slightly lighter text color */
@@ -1004,13 +989,13 @@ About CTA section
   font-size: 1rem; /* Button font size */
   border-radius: 5px; /* Rounded corners */
   text-decoration: none; /* Remove underline from links */
-  font-family: 'Roboto', sans-serif; /* Button font */
+  font-family: "Roboto", sans-serif; /* Button font */
   font-weight: 500; /* Medium font weight */
 }
 
 .cta-buttons .btn-primary {
-  background-color: #0288D1; /* Primary button color */
-  border: 1px solid #0288D1; /* Primary button border color */
+  background-color: #0288d1; /* Primary button color */
+  border: 1px solid #0288d1; /* Primary button border color */
   color: #ffffff; /* Button text color */
 }
 
@@ -1020,18 +1005,15 @@ About CTA section
 }
 
 .cta-buttons .btn-secondary {
-  background-color: #1F2A48; /* Secondary button color */
-  border: 1px solid #1F2A48; /* Secondary button border color */
+  background-color: #1f2a48; /* Secondary button color */
+  border: 1px solid #1f2a48; /* Secondary button border color */
   color: #ffffff; /* Button text color */
 }
 
 .cta-buttons .btn-secondary:hover {
-  background-color: #141C36; /* Darker color on hover */
-  border-color: #141C36; /* Border color on hover */
+  background-color: #141c36; /* Darker color on hover */
+  border-color: #141c36; /* Border color on hover */
 }
-
-
-
 
 /*<!-- ============================================================== -->
 <!-- Start sub-menu Css -->
@@ -1201,7 +1183,6 @@ About CTA section
 /*<!-- ============================================================== -->
 <!-- Start  dit-feature-section  Css -->
 <!-- ============================================================== -->*/
-
 
 .slider-area.style-three {
   background: url(assets/images/bg.png);
@@ -1517,7 +1498,6 @@ About CTA section
   display: inline-block;
   margin: 0 8px;
 }
-
 
 /*<!-- ============================================================== -->
 <!-- Start  dit-service-section  Css -->
@@ -3931,7 +3911,7 @@ textarea#massage::placeholder {
 
 .dit-events-section .events-top ul li a {
   font-size: 16px;
-  color: #B0BEC5;
+  color: #b0bec5;
   text-decoration: none;
 }
 
@@ -4002,7 +3982,7 @@ textarea#massage::placeholder {
   color: #00bcd4;
 }
 
-.dit-events-section .events-icon a{
+.dit-events-section .events-icon a {
   display: inline-block;
   color: #00bcd4;
 }
@@ -4016,7 +3996,7 @@ textarea#massage::placeholder {
   font-size: 16px;
   margin: 15px 0 0;
   overflow: hidden;
-  color: #B0BEC5;
+  color: #b0bec5;
 }
 
 .dit-events-section .events-thumb {
@@ -4035,8 +4015,6 @@ textarea#massage::placeholder {
 .events-list.active {
   display: block;
 }
-
-
 
 /*<!-- ============================================================== -->
 <!-- Start  dit-video-section  Css -->
@@ -5171,13 +5149,12 @@ textarea#massage::placeholder {
   }
 }
 
-
 /* ================================================================================
 Course Detail
 ================================================================================== */
 
 .course-hero {
-  background-color: #0288D1;
+  background-color: #0288d1;
   color: #fff;
   padding: 50px 0;
   text-align: center;
@@ -5206,7 +5183,7 @@ Course Detail
 
 .course-card h3 {
   font-size: 2rem;
-  color: #0288D1;
+  color: #0288d1;
 }
 
 .course-card p {
@@ -5216,11 +5193,11 @@ Course Detail
 .course-card .price {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #E53935;
+  color: #e53935;
 }
 
 .course-card .btn {
-  background-color: #0288D1;
+  background-color: #0288d1;
   color: #fff;
   font-size: 1.2rem;
   width: 100%;
@@ -5255,26 +5232,22 @@ Course . html css
 }
 
 .course-card h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
-  color: #0288D1;
+  color: #0288d1;
 }
 
 .course-card p {
   font-size: 1rem;
-  color: #B0BEC5;
+  color: #b0bec5;
 }
 
 .course-card .btn {
-  background-color: #0288D1;
-  border-color: #0288D1;
+  background-color: #0288d1;
+  border-color: #0288d1;
 }
 
 .course-card .btn:hover {
   background-color: #01579b;
   border-color: #01579b;
-}
-
-.container {
-  padding: 2rem 0;
 }
