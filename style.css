@@ -4100,30 +4100,19 @@ textarea#massage::placeholder {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 .footer-area .row.pad {
   border-style: solid;
   border-width: 0px 0px 1px 0px;
   border-color: #ffffff33;
   padding: 115px 0px 60px 0px;
 }
-.footer-area .row.pad .footers-texts {
-  margin-bottom: 45px;
+
+.footer-area .footer-logo img.footer-logo-img {
+  width: 150px; 
+  height: auto;
 }
-.footer-area .row.pad .footers-texts p {
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 7px;
-}
-.footer-area .row.pad .footer-titles h3 {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 17px;
-}
-.footer-area .row.pad .footerse-thumbs {
-  float: left;
-  margin-right: 10px;
-}
+
 .footer-area .footer-text p {
   font-size: 16px;
   line-height: 28px;
@@ -4132,14 +4121,17 @@ textarea#massage::placeholder {
   margin: 45px 0 25px;
   font-weight: 300;
 }
+
 .footer-area .footer-icon ul {
   margin-top: 35px;
 }
+
 .footer-area .footer-icon ul li {
   list-style: none;
   display: inline-block;
   margin-right: 7px;
 }
+
 .footer-area .footer-icon ul li a {
   display: inline-block;
   color: #fff;
@@ -4152,26 +4144,24 @@ textarea#massage::placeholder {
   font-size: 12px;
   border-radius: 50%;
 }
+
 .footer-area .footer-icon ul li a:hover {
   color: #e5eaef;
   background: #33aea0;
 }
+
 .footer-area .footer-title h5 {
   font-size: 22px;
   color: #fff;
   margin-bottom: 70px;
   font-weight: 600;
 }
-.footer-area .footers-titles h5 {
-  font-size: 22px;
-  color: #fff;
-  margin-bottom: 70px;
-  font-weight: 600;
-}
+
 .footer-area .footers-icon ul li {
   list-style: none;
   margin-top: 10px;
 }
+
 .footer-area .footers-icon ul li a {
   display: inline-block;
   color: #ffffff;
@@ -4179,85 +4169,41 @@ textarea#massage::placeholder {
   transition: 0.5s;
   font-weight: 300;
 }
+
 .footer-area .footers-icon ul li a:hover {
   color: #29bda8;
 }
+
 .footer-area .footers-icon ul li a i {
   display: inline-block;
   margin-right: 8px;
   font-size: 14px;
 }
-.footer-area .social-icon ul li {
-  list-style: none;
-}
-.footer-area .social-icon ul li i {
-  color: #fff;
-  float: left;
-  font-size: 25px;
-  display: inline-block;
-  text-align: center;
-  width: 55px;
-  line-height: 55px;
-  height: 55px;
-  box-shadow: 0 0 6px rgb(0 0 0 / 25%);
-  border-radius: 50%;
-  margin-right: 15px;
-}
-.footer-area .footer_icons ul {
-  display: inline-block;
-}
-.footer-area .footer_icons ul li {
-  display: inline-block;
-  margin-top: 17px;
-}
-.footer-area .footer_icons ul li i {
-  color: #6428ec;
-  font-size: 12px;
-  background: #fff;
-  height: 20px;
-  width: 20px;
-  line-height: 20px;
-  text-align: center;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.footer-area .footer_icons ul li span {
-  font-size: 16px;
-  color: #fff;
-}
-.footer-area .social-tex {
-  padding-bottom: 5px;
-}
-.footer-area .social-tex span {
-  display: block;
-  font-weight: 600;
-  color: #fff;
-  font-size: 18px;
-}
-.footer-area .social-tex p {
-  font-size: 16px;
-  color: #fff;
-  font-weight: 400;
-}
+
 .copy-right-area {
   padding: 25px 0px 30px 0px;
 }
+
 .copy-left {
   text-align: center;
 }
+
 .copy-right-area span {
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
   color: #fff;
 }
+
 .right_box {
   margin-bottom: 20px;
 }
+
 .footers-icons {
   float: left;
   margin-right: 15px;
 }
+
 .footers-icons i {
   font-size: 12px;
   color: #fff;
@@ -4269,13 +4215,13 @@ textarea#massage::placeholder {
   border-radius: 50%;
   text-align: center;
 }
+
 .footer-title p {
   color: #ffffff;
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 0;
 }
-
 /*<!-- ============================================================== -->
 <!-- Start  form_box  Css -->
 <!-- ============================================================== -->*/
@@ -5250,4 +5196,98 @@ Course . html css
 .course-card .btn:hover {
   background-color: #01579b;
   border-color: #01579b;
+}
+
+/* ==========================================================================================
+Course Detail
+==================================================================== */
+
+
+.course-detail-page {
+  color: #333; 
+}
+
+.course-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0288D1;
+  margin-bottom: 1.5rem;
+}
+
+.course-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555; 
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0288D1;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.learning-outcomes {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 1rem;
+  color: #555; 
+}
+
+.course-schedule, .instructor-info, .prerequisites {
+  font-size: 1rem;
+  color: #555; 
+  margin-bottom: 1.5rem;
+}
+
+.enroll-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.enroll-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0288D1;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.btn-enroll {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0288D1;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enroll:hover {
+  background-color: #026699;
+}
+
+.enroll-info {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 400;
 }
