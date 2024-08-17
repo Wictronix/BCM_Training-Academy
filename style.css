@@ -325,6 +325,8 @@ video {
   left: 0;
   z-index: 1; /* Ensure video is behind the text */
   background-color: transparent;
+  object-fit: cover;
+  clip-path: polygon(-10% 150%, 20% 0%, 400% 0%);
 }
 
 @media (max-width: 768px) {
@@ -538,8 +540,7 @@ Courses courses
   border-radius: 10px;
   color: #ffffff;
   width: 100vw; /* Full viewport width */
-  margin-left: calc(-50vw + 50%); /* Center the section */
-  margin-right: calc(-50vw + 50%); /* Center the section */
+  margin: auto;
 }
 
 .training-box {
@@ -602,7 +603,7 @@ Why BCM Learning
 */
 /* Overall Container Styling */
 .container1 {
-  background-color: #f4f6f9; /* Light background color for the container */
+  background-color: #ffffff; /* Light background color for the container */
   padding: 3rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -636,7 +637,6 @@ h2 {
 
 .stat-title {
   font-size: 1.25rem;
-  color: #0288d1;
   font-weight: bold;
   margin: 0;
 }
@@ -710,8 +710,7 @@ Schedule Section
 
 /* Schedule Section */
 .schedule-section {
-  background-color: #f4f4f4; /* Light background for the section */
-  padding: 2rem 1rem;
+  background-color: #ffffff; /* Light background for the section */
   border-radius: 8px;
 }
 
@@ -4105,7 +4104,7 @@ textarea#massage::placeholder {
   border-style: solid;
   border-width: 0px 0px 1px 0px;
   border-color: #ffffff33;
-  padding: 115px 0px 60px 0px;
+  padding: 115px 0px 6px 0px;
 }
 
 .footer-area .footer-logo img.footer-logo-img {
