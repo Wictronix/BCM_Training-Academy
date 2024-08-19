@@ -265,8 +265,6 @@ a.main_sticky {
 <!-- Video css -->
 <!-- ============================================================== -->*/
 
-
-
 /* Hero Section Styling */
 .hero-section {
   background-color: #1f2a48;
@@ -291,7 +289,8 @@ a.main_sticky {
   font-family: "Montserrat", sans-serif;
 }
 
-.text-part-1, .text-part-2 {
+.text-part-1,
+.text-part-2 {
   display: block;
   opacity: 0;
   transform: translateY(100%);
@@ -326,7 +325,7 @@ a.main_sticky {
   padding: 10px 20px;
   font-size: 1.2rem;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   /* transition: all 0.3s ease;
   animation: fadeIn 2s ease-in forwards;
   animation-delay: 3.5s;  */
@@ -387,23 +386,23 @@ video {
 
 @media (max-width: 768px) {
   .title h1 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .subtitle h3 {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
   }
 
   .text-container {
-      padding: 2rem;
+    padding: 2rem;
   }
 
   .box {
-      height: 50vh;
+    height: 50vh;
   }
 
   .video-container {
-      height: 50
+    height: 50;
   }
 }
 /*<!-- ============================================================== -->
@@ -417,8 +416,6 @@ video {
   margin-top: 20px;
   width: 100%;
 }
-
-
 
 .section-title1 {
   font-size: 2.5rem;
@@ -458,7 +455,6 @@ video {
   justify-content: center;
   padding: 1rem 0;
 }
-
 
 .search-form {
   background-color: transparent;
@@ -512,23 +508,22 @@ hr {
   }
 }
 
-
 .search_container {
   padding: 50px 15px;
 }
 
 .form-container {
-  background-color: #e6e6e6; 
-  border-radius: 8px; 
+  background-color: #e6e6e6;
+  border-radius: 8px;
 }
 
 .shadow-input {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   border: 1px solid #ccc;
 }
 
 .form-control-lg {
-  font-size: 1rem; 
+  font-size: 1rem;
 }
 
 /* .btn-primary {
@@ -540,8 +535,6 @@ hr {
 .btn-primary:hover {
   background-color: #1a306b;
 } */
-
-
 
 /*  -----------------------------------------------------------------------
 
@@ -615,32 +608,31 @@ Explore our courses
 
 @media (max-width: 768px) {
   .card-img-top {
-      height: 150px;
+    height: 150px;
   }
 
   .card-title {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .card-text {
-      font-size: 0.875rem;
+    font-size: 0.875rem;
   }
 }
 
 @media (max-width: 576px) {
   .card-img-top {
-      height: 120px;
+    height: 120px;
   }
 
   .card-title {
-      font-size: 0.875rem;
+    font-size: 0.875rem;
   }
 
   .card-text {
-      font-size: 0.75rem;
+    font-size: 0.75rem;
   }
 }
-
 
 /*  -----------------------------------------------------------------------
 -------------------------------------------------------------------------------
@@ -657,7 +649,7 @@ Courses courses
   padding: 2rem;
   border-radius: 10px;
   color: #ffffff;
-  width: 100vw; /* Full viewport width */
+  width: 100%; /* Full viewport width */
   margin: auto;
 }
 
@@ -771,34 +763,33 @@ h2 {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .stat-box {
-      padding: 1.5rem;
-      height: 180px;
+    padding: 1.5rem;
+    height: 180px;
   }
 
   .stat-box h2 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .stat-title {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 576px) {
   .stat-box {
-      padding: 1rem;
-      height: 160px;
+    padding: 1rem;
+    height: 160px;
   }
 
   .stat-box h2 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .stat-title {
-      font-size: 0.875rem;
+    font-size: 0.875rem;
   }
 }
-
 
 /*  -----------------------------------------------------------------------
 -------------------------------------------------------------------------------
@@ -863,13 +854,13 @@ Schedule Section
 /* Responsive Design */
 @media (max-width: 768px) {
   .event-cards {
-      flex-direction: row;
-      overflow-x: auto;
+    flex-direction: row;
+    overflow-x: auto;
   }
 
   .event-card {
-      flex: 1 0 45%;
-      margin-right: 1rem;
+    flex: 1 0 45%;
+    margin-right: 1rem;
   }
 }
 
@@ -1586,7 +1577,7 @@ About CTA section
   margin-bottom: 15px;
   margin-top: 0;
   font-size: 60px;
-  color:#001d3a;
+  color: #001d3a;
   font-weight: 700;
   font-family: "Roboto";
   text-align: center;
