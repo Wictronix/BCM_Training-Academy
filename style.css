@@ -6,11 +6,11 @@
 
 button {
   --blue: #0173ff;
-  --hover-blue: #003870; 
+  --hover-blue: #003870;
   --radius: 40px;
   --rotate: 0deg;
   padding: 15px 25px;
-  border-radius: var(--radius);
+  border-radius: 6px;
   background: var(--blue);
   color: white;
   font-weight: 500;
@@ -18,7 +18,7 @@ button {
   border: 0;
   position: relative;
   overflow: hidden;
-  cursor: pointer; 
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
@@ -45,8 +45,8 @@ button .fancy:after {
   background: var(--blue);
   position: absolute;
   inset: 1px;
-  border-radius: 40px;
-  transition: background-color 0.3s; 
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
 button .text {
@@ -54,7 +54,7 @@ button .text {
 }
 
 button:hover .fancy:after {
-  background: var(--hover-blue); 
+  background: var(--hover-blue);
 }
 
 @keyframes rotate {
@@ -67,29 +67,29 @@ button a {
   color: white;
 }
 
-button a :hover{
+button a :hover {
   color: white;
 }
 
-.text a:hover{
+.text a:hover {
   color: white;
 }
 
 /* ================================================================
 form
 ====================================================== */
-/* From Uiverse.io by ammarsaa */ 
+/* From Uiverse.io by ammarsaa */
 .form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   /* max-width: 350px; */
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   position: relative;
-  background-color: #1a1a1a;
-  color: #fff;
-  border: 1px solid #333;
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #d5d5d5;
 }
 
 .title1 {
@@ -125,24 +125,6 @@ form
   background-color: #00bfff;
 }
 
-.message, 
-.signin {
-  font-size: 14.5px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.signin {
-  text-align: center;
-}
-
-.signin a:hover {
-  text-decoration: underline royalblue;
-}
-
-.signin a {
-  color: #00bfff;
-}
-
 .flex {
   display: flex;
   width: 100%;
@@ -154,8 +136,8 @@ form
 }
 
 .form label .input {
-  background-color: #333;
-  color: #fff;
+  background-color: #e4e4e4;
+  color: #0b0b0b;
   width: 100%;
   padding: 20px 05px 05px 10px;
   outline: 0;
@@ -164,7 +146,7 @@ form
 }
 
 .form label .input + span {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.6);
   position: absolute;
   left: 10px;
   top: 0px;
@@ -197,7 +179,7 @@ form
   border-radius: 10px;
   color: #fff;
   font-size: 16px;
-  transform: .3s ease;
+  transform: 0.3s ease;
   background-color: #00bfff;
 }
 
@@ -216,8 +198,6 @@ form
     opacity: 0;
   }
 }
-
-
 
 .sticky-nav {
   left: 0;
@@ -240,7 +220,7 @@ form
 <!-- Start header-top Css -->
 <!-- ============================================================== -->*/
 
-.header-menu ul li a{
+.header-menu ul li a {
   margin: 10px 12px;
 }
 
@@ -636,7 +616,7 @@ video {
 <!-- ============================================================== -->*/
 
 .section-title1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   color: #0288d1;
@@ -649,21 +629,10 @@ video {
   background-color: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
-  padding: 30px 20px; 
-  margin: 20px; 
-  z-index: 2; 
+  margin: 20px;
+  margin-bottom: 10px;
+  z-index: 2;
   position: relative;
-}
-
-.form-background {
-  position: absolute;
-  top: 20px; 
-  left: 20px; 
-  width: 100%;
-  height: 100%;
-  background-color: #005799;
-  border-radius: 8px;
-  z-index: 1;
 }
 
 .shadow-input {
@@ -673,12 +642,6 @@ video {
 
 .form-control-lg {
   font-size: 1rem;
-}
-
-.form-container input,
-.form-container select,
-.form-container button {
-  margin-bottom: 10px;
 }
 
 .search-form {
@@ -704,7 +667,7 @@ video {
 
 @media (max-width: 768px) {
   .search-form .form-control {
-    width: 100%; 
+    width: 100%;
     margin-bottom: 10px;
   }
 
@@ -754,6 +717,7 @@ Explore our courses
   background-color: #fff;
   transition: background-color 0.3s, color 0.3s;
   z-index: 1;
+  padding-bottom: 0px;
 }
 
 .card-body::before {
@@ -773,7 +737,7 @@ Explore our courses
   left: 0;
 }
 
-.card-title{
+.card-title {
   font-family: "Roboto", sans-serif;
   color: #333f4f;
   transition: color 0.3s;
@@ -796,11 +760,14 @@ Explore our courses
   object-fit: cover;
 }
 
-
 .card-info {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* align-items: center; */
+}
+
+.card-info .card-text {
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
@@ -911,18 +878,16 @@ Why BCM Learning
 */
 /* Overall Container Styling */
 .container1 {
-  background-color: #ffffff; 
+  background-color: #ffffff;
   padding: 3rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 h2 {
   font-size: 2.5rem;
   color: #0288d1;
 }
-
 
 .stat-box {
   display: flex;
@@ -935,7 +900,7 @@ h2 {
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  height: 200px; 
+  height: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -943,7 +908,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.5rem; 
+  margin-bottom: 0.5rem;
 }
 
 .stat-value h2 {
@@ -955,8 +920,8 @@ h2 {
 
 .stat-value i {
   font-size: 2rem;
-  color: #01579b; 
-  margin-left: 0.5rem; 
+  color: #01579b;
+  margin-left: 0.5rem;
 }
 
 .stat-title {
@@ -970,7 +935,6 @@ h2 {
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
-
 
 @media (max-width: 768px) {
   .stat-box {
@@ -1009,7 +973,6 @@ h2 {
     font-size: 0.875rem;
   }
 }
-
 
 /*  -----------------------------------------------------------------------
 -------------------------------------------------------------------------------
@@ -4314,7 +4277,6 @@ textarea#massage::placeholder {
 .events-list.active {
   display: block;
 }
-
 
 /*<!-- ============================================================== -->
 <!-- Start  dit-video-section  Css -->
