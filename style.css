@@ -4356,7 +4356,7 @@ textarea#massage::placeholder {
 <!-- Start  footer-area  Css -->
 <!-- ============================================================== -->*/
 .footer-area {
-  padding: 130px 0px 0 0px;
+  padding: 230px 0px 0 0px;
   background: url(assets/images/education2-2.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -4367,7 +4367,7 @@ textarea#massage::placeholder {
   border-style: solid;
   border-width: 0px 0px 1px 0px;
   border-color: #ffffff33;
-  padding: 115px 0px 6px 0px;
+  padding: 20px 0px 6px 0px;
 }
 
 .footer-area .footer-logo img.footer-logo-img {
@@ -4380,7 +4380,7 @@ textarea#massage::placeholder {
   line-height: 28px;
   text-align: left;
   color: #fff;
-  margin: 45px 0 25px;
+  margin: 25px 0px;
   font-weight: 300;
 }
 
@@ -4415,13 +4415,13 @@ textarea#massage::placeholder {
 .footer-area .footer-title h5 {
   font-size: 22px;
   color: #fff;
-  margin-bottom: 70px;
+  margin-bottom: 25px;
   font-weight: 600;
 }
 
 .footer-area .footers-icon ul li {
   list-style: none;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .footer-area .footers-icon ul li a {
@@ -4458,7 +4458,7 @@ textarea#massage::placeholder {
 }
 
 .right_box {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footers-icons {
