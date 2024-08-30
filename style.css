@@ -75,8 +75,6 @@ button a :hover {
   color: white;
 }
 
-
-
 button .fancy1 {
   position: absolute;
   inset: 0;
@@ -109,11 +107,10 @@ button .text1 {
 }
 
 button:hover .fancy1:after {
-  background: var(--blue);
+  background: rgb(113, 208, 255);
 }
-
 .text1 a:hover {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 /* ================================================================
@@ -1783,14 +1780,21 @@ About CTA section
 <!-- ============================================================== -->*/
 .breadcumb-area {
   margin-top: 5rem;
-  /* padding: 170px 0 143px; */
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-image: url(assets/images/banner.jpeg);
+  background-clip: border-box;
   position: relative;
-  background: url(assets/images/banner.jpeg);
-  margin: 0 auto; /* Center the element horizontally */
+  margin: 0 auto;
+  height: 20vh;
+}
+
+@media (max-width: 1351px) {
+  .breadcumb-area {
+    height: 15vh;
+  }
 }
 
 .breacumb-content {
@@ -1820,139 +1824,6 @@ About CTA section
 .breadcumb-content-text a i {
   display: inline-block;
   margin: 0 8px;
-}
-
-/*<!-- ============================================================== -->
-<!-- Start  dit-service-section  Css -->
-<!-- ============================================================== -->*/
-.dit-service-section {
-  padding: 100px 0 100px;
-}
-.dit-service-section .section-title {
-  text-align: center;
-}
-.dit-service-section .sub-title h5::after {
-  position: absolute;
-  content: "";
-  top: 4px;
-  left: 0px;
-  right: -303px;
-  text-align: center;
-  background: url(assets/images/shape.png);
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  margin: auto;
-}
-.dit-service-section .single-service-box {
-  padding: 65px 20px 33px;
-  text-align: center;
-  position: relative;
-  border-radius: 3px;
-  background: url(assets/images/service.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: 0.5s;
-  z-index: 1;
-  margin-bottom: 30px;
-}
-.dit-service-section .single-service-box::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transition: 0.4s;
-  background: url(assets/images/service-b.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  opacity: 0;
-}
-.dit-service-section .single-service-box:hover::before {
-  background: url(assets/images/service-b.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  opacity: 1;
-}
-.dit-service-section .single-service-box .service-title h2 {
-  margin: 50px 0 15px 0;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-align: center;
-  transition: 0.5s;
-}
-.dit-service-section .single-service-box:hover .service-title h2 {
-  color: #fff;
-}
-.dit-service-section .single-service-box .service-description p {
-  font-size: 16px;
-  transition: 0.5s;
-}
-.dit-service-section .single-service-box:hover .service-description p {
-  color: #fff;
-}
-.dit-service-section .single-service-box .service-button a {
-  display: inline-block;
-  font-size: 16px;
-  color: #062e5f;
-}
-.service-button a i {
-  display: inline-block;
-  margin-left: 5px;
-}
-.dit-service-section .single-service-box:hover .service-button a {
-  color: #fff;
-}
-.dit-service-section .single-service-box .service-button a:hover {
-  letter-spacing: 2px;
-}
-.dit-service-section .single-service-box .service-thumb {
-  position: relative;
-  z-index: 1;
-}
-.dit-service-section .single-service-box .service-thumb::before {
-  position: absolute;
-  top: -23px;
-  left: 0;
-  right: 0;
-  content: "";
-  height: 100px;
-  width: 100px;
-  line-height: 101px;
-  text-align: center;
-  background: #c7e8e4;
-  z-index: -1;
-  margin: 0 auto 0;
-  border-radius: 50%;
-}
-.dit-service-section.style-two .service-button {
-  margin-top: 22px;
-  border-top: 1px solid #e9ebec;
-}
-.dit-service-section.style-two .single-service-box .service-button a {
-  padding-top: 15px;
-  font-size: 15px;
-}
-.dit-service-section.style-two .service-thumb img {
-  width: 85%;
-}
-.dit-service-section.style-two .single-service-box .service-thumb::before {
-  background: inherit;
-}
-.dit-service-section.style-two .single-service-box .service-title h2 {
-  margin: 35px 0 15px 0;
-}
-.dit-service-section.style-two .single-service-box {
-  padding: 35px 20px 25px;
-}
-.dit-service-section.style-two .sub-title h5::after {
-  right: -230px;
 }
 /*<!-- ============================================================== -->
 <!-- Start dit-about-section.style-four  Css -->
@@ -3692,7 +3563,7 @@ About CTA section
 .dit-contact-section .contact-icon i {
   display: inline-block;
   font-size: 50px;
-  color: #3bbca6;
+  color: #0288d1;
   position: relative;
   z-index: 1;
   background: #e6eaef;
@@ -3715,7 +3586,7 @@ About CTA section
   left: 10px;
   right: 10px;
   bottom: 10px;
-  background: #3bbca6;
+  background: #003870;
   border-radius: 50%;
   z-index: -1;
   transition: transform 0.5s;
@@ -3739,7 +3610,6 @@ About CTA section
 .contacts-titles h2 {
   font-size: 35px;
 }
-
 
 /*<!-- ============================================================== -->
 <!-- Start  dit-blog-section  Css -->
@@ -4416,7 +4286,7 @@ textarea#massage::placeholder {
   padding: 150px 0px 6px 0px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .footer-area .row.pad {
     border-style: solid;
     border-width: 0px 0px 1px 0px;
@@ -4424,7 +4294,7 @@ textarea#massage::placeholder {
     padding: 200px 0px 6px 0px;
   }
 }
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .footer-area .row.pad {
     border-style: solid;
     border-width: 0px 0px 1px 0px;
@@ -4546,7 +4416,6 @@ textarea#massage::placeholder {
   font-weight: 300;
   margin-bottom: 0;
 }
-
 
 /*<!-- ============================================================== -->
 <!-- Start  form_box  Css -->
