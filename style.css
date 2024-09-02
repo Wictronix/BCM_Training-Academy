@@ -64,15 +64,15 @@ button:hover .fancy:after {
 }
 
 button a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 button a :hover {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .text a:hover {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 button .fancy1 {
@@ -85,7 +85,7 @@ button .fancy1:before {
   background: conic-gradient(
     from var(--rotate),
     transparent 0%,
-    white 5%,
+    rgb(255, 255, 255) 5%,
     transparent 10%
   );
   position: absolute;
@@ -100,6 +100,7 @@ button .fancy1:after {
   inset: 1px;
   border-radius: 8px;
   transition: background-color 0.3s;
+  color: #000000;
 }
 
 button .text1 {
@@ -107,7 +108,12 @@ button .text1 {
 }
 
 button:hover .fancy1:after {
-  background: rgb(113, 208, 255);
+  background: rgb(252, 254, 255);
+  color: #000;
+}
+
+.text1 :hover {
+  color: rgb(0, 0, 0);
 }
 .text1 a:hover {
   color: rgb(0, 0, 0);
@@ -1084,6 +1090,41 @@ Schedule Section
     margin-right: 1rem;
   }
 }
+
+
+/* ==========================================================================
+What our customer say
+================================================================= */
+
+.testimonial-section {
+  background-color: #f9f9f9;
+}
+
+.testimonial-content {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+
 
 /*  -----------------------------------------------------------------------
 -------------------------------------------------------------------------------
