@@ -95,7 +95,7 @@ button .fancy1:before {
 
 button .fancy1:after {
   content: "";
-  background: var(--hover-blue);
+  background: white;
   position: absolute;
   inset: 1px;
   border-radius: 8px;
@@ -105,19 +105,27 @@ button .fancy1:after {
 
 button .text1 {
   position: relative;
+  color: #2288d1;
+}
+
+button .text1:hover {
+  color: white;
+}
+
+button .text1 a {
+  position: relative;
+  color: #2288d1;
+}
+
+button .text1 a:hover {
+  color: white;
 }
 
 button:hover .fancy1:after {
-  background: rgb(252, 254, 255);
-  color: #2288d1;;
+  background: #2288d1;
+  color: #2288d1;
 }
 
-.text1 :hover {
-  color: #2288d1;
-}
-.text1 a:hover {
-  color: #2288d1;
-}
 
 /* ================================================================
 form
@@ -885,7 +893,7 @@ Courses courses
 
 .training-box p {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: #b0bec5;
   margin-bottom: 0.5rem;
@@ -1098,21 +1106,50 @@ What our customer say
 
 .testimonial-section {
   background-color: #f9f9f9;
+  overflow: hidden;
 }
 
-.testimonial-content {
-  max-width: 700px;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #ddd;
+.testimonial-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.testimonial-card {
+  width: 250px;
   background: #fff;
+  padding: 20px;
+  margin-right: 2rem;
+  width: 20rem;
   border-radius: 10px;
+  text-align: center;
+  transition: transform 0.5s ease, z-index 0.5s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.6;
+  cursor: pointer;
+  transform: scale(0.8);
+  position: relative;
+}
+
+.testimonial-card.active {
+  transform: scale(1);
+  z-index: 1;
+  opacity: 1;
+}
+
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .testimonial-text {
-  font-size: 18px;
+  font-size: 16px;
   color: #666;
   line-height: 1.5;
+  margin-top: 15px;
 }
 
 .testimonial-name {
@@ -1120,6 +1157,40 @@ What our customer say
   color: #333;
 }
 
+/* ====================================AWARDS SECTION========================= */
+
+
+.awards-section {
+  background-color: #f7f7f7;
+}
+
+.award-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+.award-card img {
+  max-height: 150px; /* Adjusted height for smaller containers */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #333;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
 
 
 
@@ -1176,14 +1247,14 @@ About BCM
 }
 
 .about-text p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 1rem;
   color: #000000;
 }
 
 .about-text p strong {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #00bcd4;
 }
 
@@ -1319,61 +1390,61 @@ About CTA section
 
 /* CTA Section Styles */
 .cta-section {
-  background-color: #0288d1; /* Primary color for the background */
-  color: #ffffff; /* Text color */
-  padding: 3rem 0; /* Padding for top and bottom */
-  text-align: center; /* Center text alignment */
+  background-color: #f5f5f5; 
+  color: #ffffff; 
+  padding: 3rem 0; 
+  text-align: center; 
 }
 
 .cta-heading {
-  font-family: "Montserrat", sans-serif; /* Heading font */
-  font-size: 2.5rem; /* Heading font size */
-  font-weight: 700; /* Bold heading */
-  margin-bottom: 1rem; /* Space below heading */
+  font-family: "Montserrat", sans-serif; 
+  font-size: 2.5rem;
+  font-weight: 700; 
+  margin-bottom: 1rem;
 }
 
 .cta-description {
-  font-family: "Roboto", sans-serif; /* Description font */
-  font-size: 1.25rem; /* Description font size */
-  margin-bottom: 2rem; /* Space below description */
-  color: #f0f0f0; /* Slightly lighter text color */
+  font-family: "Roboto", sans-serif; 
+  font-size: 1.25rem; 
+  margin-bottom: 2rem; 
+  color: #000000; 
 }
 
 .cta-buttons {
-  display: flex; /* Flexbox for button alignment */
-  justify-content: center; /* Center buttons */
-  gap: 1rem; /* Space between buttons */
+  display: flex; 
+  justify-content: center; 
+  gap: 1rem; 
 }
 
 .cta-buttons .btn {
-  padding: 0.75rem 2rem; /* Padding for buttons */
-  font-size: 1rem; /* Button font size */
-  border-radius: 5px; /* Rounded corners */
-  text-decoration: none; /* Remove underline from links */
-  font-family: "Roboto", sans-serif; /* Button font */
-  font-weight: 500; /* Medium font weight */
+  padding: 0.75rem 2rem; 
+  font-size: 1rem;
+  border-radius: 5px; 
+  text-decoration: none; 
+  font-family: "Roboto", sans-serif; 
+  font-weight: 500;
 }
 
 .cta-buttons .btn-primary {
-  background-color: #0288d1; /* Primary button color */
-  border: 1px solid #0288d1; /* Primary button border color */
-  color: #ffffff; /* Button text color */
+  background-color: #0288d1; 
+  border: 1px solid #0288d1; 
+  color: #ffffff; 
 }
 
 .cta-buttons .btn-primary:hover {
-  background-color: #01579b; /* Darker color on hover */
-  border-color: #01579b; /* Border color on hover */
+  background-color: #01579b; 
+  border-color: #01579b; 
 }
 
 .cta-buttons .btn-secondary {
-  background-color: #1f2a48; /* Secondary button color */
-  border: 1px solid #1f2a48; /* Secondary button border color */
-  color: #ffffff; /* Button text color */
+  background-color: #1f2a48; 
+  border: 1px solid #1f2a48;
+  color: #ffffff; 
 }
 
 .cta-buttons .btn-secondary:hover {
-  background-color: #141c36; /* Darker color on hover */
-  border-color: #141c36; /* Border color on hover */
+  background-color: #141c36; 
+  border-color: #141c36; 
 }
 
 /*<!-- ============================================================== -->
