@@ -361,7 +361,7 @@ form
 }
 
 .header-logo img {
-  max-height: 50px;
+  max-height: 100px;
   width: auto;
 }
 
@@ -4438,7 +4438,7 @@ textarea#massage::placeholder {
   display: inline-block;
   color: #fff;
   transition: 0.5s;
-  background: #185975;
+  background: #0288d1;
   height: 30px;
   width: 30px;
   line-height: 31px;
@@ -4449,7 +4449,7 @@ textarea#massage::placeholder {
 
 .footer-area .footer-icon ul li a:hover {
   color: #e5eaef;
-  background: #33aea0;
+  background: #00ffd0;
 }
 
 .footer-area .footer-title h5 {
