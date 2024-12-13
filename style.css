@@ -267,7 +267,7 @@ form
   animation: 500ms running fadeInUp;
   -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   transition: 0.5s !important;
-  background: #052d5f !important;
+  background: #003399 !important;
   z-index: 9999 !important;
   animation-name: slideInDown;
   /* padding: 0 40px 0px; */
@@ -282,7 +282,7 @@ form
 }
 
 .header-top {
-  background: #00bcd4;
+  background: #0288d1;
   padding: 9px 0;
 }
 
@@ -1240,7 +1240,7 @@ About BCM
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #00bcd4;
+  color: #0288d1;
   margin-bottom: 1.5rem;
 }
 
@@ -1253,13 +1253,13 @@ About BCM
 
 .about-text p strong {
   font-size: 1.5rem;
-  color: #00bcd4;
+  color: #0288d1;
 }
 
 .about-image img {
   border-radius: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  /* border: 3px solid #00bcd4; */
+  /* border: 3px solid #0288d1; */
 }
 
 /* Responsive Design */
@@ -1470,7 +1470,7 @@ About CTA section
 }
 
 .header-menu ul li .sub-menu li:hover {
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
 }
 
@@ -1541,7 +1541,7 @@ About CTA section
   margin-top: 35px;
 }
 .slider-button a {
-  background: #00bcd4;
+  background: #0288d1;
   display: inline-block;
   color: #fff;
   padding: 11px 40px;
@@ -1676,7 +1676,7 @@ About CTA section
   border: 1px solid #fff;
 }
 .slider-area.style-three .slider-btn a:hover {
-  border: 1px solid #00bcd4;
+  border: 1px solid #0288d1;
 }
 .slider-area.style-three .slider-btn a::before {
   position: absolute;
@@ -1692,7 +1692,7 @@ About CTA section
   z-index: -1;
 }
 .slider-area.style-three .slider-btn a:hover::before {
-  background: #00bcd4;
+  background: #0288d1;
   opacity: 1;
   transform: scale(1);
   border-radius: 5px;
@@ -1715,7 +1715,7 @@ About CTA section
   transition: 0.5s;
   position: relative;
   z-index: 1;
-  border: 1px solid #00bcd4;
+  border: 1px solid #0288d1;
 }
 .slider-area.style-three .slider-button a:hover {
   border: 1px solid #fff;
@@ -1728,7 +1728,7 @@ About CTA section
   left: 0;
   height: 100%;
   width: 100%;
-  background: #00bcd4;
+  background: #0288d1;
   transform: scale(0.1, 1);
   transition: 0.5s;
   opacity: 0;
@@ -1804,7 +1804,7 @@ About CTA section
   line-height: 26px;
   text-align: center;
   color: #fff;
-  background: #00bcd4;
+  background: #0288d1;
   border-radius: 50%;
   font-weight: 800;
   margin-right: 6px;
@@ -1821,7 +1821,7 @@ About CTA section
   margin-top: 35px;
 }
 .slider-area.style-four .slider-btn a {
-  background: #00bcd4;
+  background: #0288d1;
   display: inline-block;
   color: #fff;
   padding: 11px 40px;
@@ -1972,7 +1972,7 @@ About CTA section
   line-height: 26px;
   height: 25px;
   border-radius: 50%;
-  background: #00bcd4;
+  background: #0288d1;
   margin-right: 12px;
 }
 .dit-about-section.style-four .about-icon-list ul li span {
@@ -1989,7 +1989,7 @@ About CTA section
 }
 .dit-about-section.style-four .about-button a {
   display: inline-block;
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
   padding: 13px 30px;
   position: relative;
@@ -2037,7 +2037,7 @@ About CTA section
 }
 .dit-instructors-area .instructors-button a {
   display: inline-block;
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
   padding: 12px 28px;
   position: relative;
@@ -2091,14 +2091,14 @@ About CTA section
   left: 0;
   height: 100%;
   width: 100%;
-  background: #00bcd4;
+  background: #0288d1;
   transform: scale(0);
   transition: 0.5s;
   opacity: 0;
   z-index: -1;
 }
 .single-feature:hover::before {
-  background: #00bcd4;
+  background: #0288d1;
   opacity: 1;
   transform: scale(1);
   border-radius: 5px;
@@ -2211,7 +2211,7 @@ About CTA section
 }
 .dit-about-area .about-button a {
   display: inline-block;
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
   padding: 12px 28px;
   position: relative;
@@ -2256,7 +2256,7 @@ About CTA section
   right: 0;
   height: 2px;
   width: 35px;
-  background: #00bcd4;
+  background: #0288d1;
 }
 .dit-about-area.style-two .row.mar-bot {
   margin-bottom: 28px;
@@ -2306,7 +2306,7 @@ About CTA section
   right: 0;
   height: 2px;
   width: 35px;
-  background: #00bcd4;
+  background: #0288d1;
 }
 .countdown-thumb img {
   width: 100%;
@@ -2317,7 +2317,7 @@ About CTA section
 }
 .countdown-area .countdown-button a {
   display: inline-block;
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
   padding: 12px 28px;
   position: relative;
@@ -2444,7 +2444,7 @@ About CTA section
   right: 0;
   height: 2px;
   width: 35px;
-  background: #00bcd4;
+  background: #0288d1;
 }
 .dit-category-section .sub-titles h4::after {
   position: absolute;
@@ -2454,7 +2454,7 @@ About CTA section
   right: 0;
   height: 2px;
   width: 35px;
-  background: #00bcd4;
+  background: #0288d1;
 }
 /*<!-- ============================================================== -->
 <!-- Start  dit-choose-section  Css -->
@@ -2487,7 +2487,7 @@ About CTA section
   line-height: 26px;
   height: 25px;
   border-radius: 50%;
-  background: #00bcd4;
+  background: #0288d1;
   margin-right: 12px;
 }
 .choose-icon-list ul li span {
@@ -2504,7 +2504,7 @@ About CTA section
 }
 .dit-choose-section .choose-button a {
   display: inline-block;
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
   padding: 13px 30px;
   position: relative;
@@ -2550,13 +2550,13 @@ About CTA section
   right: 0;
   height: 2px;
   width: 35px;
-  background: #00bcd4;
+  background: #0288d1;
 }
 .dit-team-area .single-team {
   transition: 0.3s;
   padding: 10px 10px 1px;
   border-radius: 4px;
-  background: #00bcd4;
+  background: #0288d1;
   overflow: hidden;
   position: relative;
   margin-bottom: 30px;
@@ -2614,7 +2614,7 @@ About CTA section
   width: 35px;
   line-height: 36px;
   text-align: center;
-  background: #00bcd4;
+  background: #0288d1;
   border-radius: 50%;
   font-size: 14px;
   transition: 0.5s;
@@ -2784,7 +2784,7 @@ About CTA section
   z-index: 22;
 }
 .course-name span {
-  background: #00bcd4;
+  background: #0288d1;
   padding: 7px 22px;
   color: #fff;
   border-radius: 3px;
@@ -2802,7 +2802,7 @@ About CTA section
   border-radius: 5px;
 }
 .single-course:hover .course-button a {
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
 }
 .course-button span {
@@ -3177,7 +3177,7 @@ About CTA section
 }
 .dit-join-section .join-button a {
   display: inline-block;
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
   padding: 12px 28px;
   position: relative;
@@ -3400,14 +3400,14 @@ About CTA section
   width: 105px;
   line-height: 100px;
   text-align: center;
-  background: #00bcd4;
+  background: #0288d1;
   margin: 0 auto 0;
   border-radius: 50%;
 }
 .dit-testimonial-section.style-four .owl-prev {
   border-radius: 50%;
   color: #062e5f;
-  border: 1px solid #00bcd4;
+  border: 1px solid #0288d1;
   font-size: 19px;
   height: 46px;
   line-height: 46px;
@@ -3423,7 +3423,7 @@ About CTA section
 .dit-testimonial-section.style-four .owl-next {
   border-radius: 50%;
   color: #062e5f;
-  border: 1px solid #00bcd4;
+  border: 1px solid #0288d1;
   font-size: 19px;
   height: 46px;
   line-height: 46px;
@@ -3438,11 +3438,11 @@ About CTA section
   transition: 0.5s;
 }
 .dit-testimonial-section.style-four .owl-nav .owl-prev:hover {
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
 }
 .dit-testimonial-section.style-four .owl-nav .owl-next:hover {
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
 }
 
@@ -3591,7 +3591,7 @@ About CTA section
   width: 35px;
   line-height: 35px;
   text-align: center;
-  background: #00bcd4;
+  background: #0288d1;
   top: 10px;
   right: 21px;
   border-radius: 50%;
@@ -3831,7 +3831,7 @@ About CTA section
   right: 0;
   height: 2px;
   width: 35px;
-  background: #00bcd4;
+  background: #0288d1;
 }
 .dit-blog-section.style-two {
   padding: 0 0 100px;
@@ -4160,7 +4160,7 @@ textarea#massage::placeholder {
   top: 0;
   height: 100px;
   width: 1px;
-  background: #00bcd4;
+  background: #0288d1;
 }
 .dit-events-section .events-number h2 {
   font-size: 70px;
@@ -4224,7 +4224,7 @@ textarea#massage::placeholder {
 }
 
 .dit-events-section .events-top ul li a.active {
-  color: #00bcd4;
+  color: #0288d1;
   font-weight: bold;
 }
 
@@ -4271,7 +4271,7 @@ textarea#massage::placeholder {
   font-size: 70px;
   margin: 0;
   line-height: 70px;
-  color: #00bcd4;
+  color: #0288d1;
 }
 
 .dit-events-section .events-number span {
@@ -4287,7 +4287,7 @@ textarea#massage::placeholder {
 }
 
 .dit-events-section .events-icon {
-  color: #00bcd4;
+  color: #0288d1;
   margin-bottom: 10px;
 }
 
@@ -4322,7 +4322,7 @@ textarea#massage::placeholder {
 }
 .dit-video-section .video-button a {
   display: inline-block;
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
   padding: 12px 28px;
   position: relative;
@@ -4382,18 +4382,16 @@ textarea#massage::placeholder {
 <!-- Start  footer-area  Css -->
 <!-- ============================================================== -->*/
 .footer-area {
-  padding: 50px 0px 0 0px;
-  background: url(assets/images/education2-2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  padding: 0px;
+  background-color: #003399;
+  border-top-left-radius: 100px;
 }
 
 .footer-area .row.pad {
   border-style: solid;
   border-width: 0px 0px 1px 0px;
   border-color: #ffffff33;
-  padding: 150px 0px 6px 0px;
+  padding: 50px 0px 6px 0px;
 }
 
 @media (max-width: 768px) {
@@ -4512,7 +4510,7 @@ textarea#massage::placeholder {
   font-size: 12px;
   color: #fff;
   display: inline-block;
-  background: #00bcd4;
+  background: #0288d1;
   width: 28px;
   height: 28px;
   line-height: 28px;
@@ -4585,7 +4583,7 @@ textarea#massage::placeholder {
   border-radius: 5px;
   overflow: hidden;
   margin-top: 5px;
-  background: #00bcd4;
+  background: #0288d1;
   border: none;
   position: relative;
 }
@@ -4930,7 +4928,7 @@ textarea#massage::placeholder {
   text-align: center;
   font-size: 14px;
   cursor: pointer;
-  background: #00bcd4;
+  background: #0288d1;
   color: #fff;
   margin-top: 0px;
   height: 30px;
@@ -5204,7 +5202,7 @@ textarea#massage::placeholder {
   top: 3px;
   z-index: 1;
   background-image: -moz-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-  background: #00bcd4;
+  background: #0288d1;
   background-image: -ms-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
 }
 .top-wrap .go-top-button i {
@@ -5658,7 +5656,7 @@ landing page schedule courses
 }
 
 .schedule-event-title {
-  color: #00bcd4;
+  color: #0288d1;
   margin-bottom: 10px;
 }
 
@@ -5670,7 +5668,7 @@ landing page schedule courses
 .text-center .view-more-btn {
   margin-top: 20px;
   padding: 10px 20px;
-  background: #00bcd4;
+  background: #0288d1;
   border: none;
   border-radius: 5px;
   color: #fff;
