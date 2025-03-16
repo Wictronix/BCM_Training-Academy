@@ -5696,3 +5696,82 @@ landing page schedule courses
 .text-center .view-more-btn:hover .view-more-overlay {
   width: 0;
 }
+
+/* General Responsive Adjustments */
+@media (max-width: 991px) {
+  .header-menu ul {
+    display: none; /* Hide desktop menu on smaller screens */
+  }
+  .mobile-menu-area {
+    display: block !important; /* Ensure mobile menu is visible */
+  }
+  .footer-area .col-lg-8,
+  .footer-area .col-lg-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section .row {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .hero-section .col-md-6 {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-section .video-container video {
+    height: auto;
+    max-height: 50vh;
+  }
+  .hero-section .btn-group button {
+    margin: 5px 0;
+    width: 100%;
+  }
+  .row .col-md-6,
+  .row .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .owl-carousel .item img {
+    width: 100%;
+    height: auto;
+  }
+  .dit-contact-section iframe {
+    height: 300px;
+  }
+  .dit-contact-section .form_box input,
+  .dit-contact-section .form_box textarea {
+    width: 100%;
+  }
+  .search_container1 .form-container {
+    margin-top: 20px;
+  }
+}
+
+/* Mobile Menu Adjustments */
+@media (max-width: 767px) {
+  .mobile-menu-area .header-menu ul {
+    display: block;
+    text-align: left;
+  }
+  .mobile-menu-area .header-menu ul li {
+    display: block;
+    padding: 10px 0;
+  }
+  .mobile-menu-area .sub-menu {
+    position: static;
+    display: none;
+    padding-left: 20px;
+  }
+  .mobile-menu-area .icon:hover .sub-menu {
+    display: block;
+  }
+}
+
+/* Ensure images and logos scale properly */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
